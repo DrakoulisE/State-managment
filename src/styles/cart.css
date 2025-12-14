@@ -1,0 +1,33 @@
+h2{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+.cartList{
+    height: 75vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+}
+
+.cartList::-webkit-scrollbar {
+    width: 6px;
+}
+
+.cartList::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.cartList::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 20px;
+}
+
+.cartTotal{
+    display: flex;
+    justify-content: flex-end;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    padding-top: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}

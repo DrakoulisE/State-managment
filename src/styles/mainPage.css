@@ -1,0 +1,48 @@
+.mainPage{
+    display: flex;
+    margin-top: 10vh;
+}
+
+.productList{
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    padding: 10px;
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.cart{
+    width: 100%;
+    min-height: 30vh;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    padding: 10px;
+}
+
+@media (max-width: 700px) {
+    .mainPage{
+        flex-direction: column;
+    }
+
+    .productList{
+        width: auto;
+        border-right: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    }
+    
+    .cart{
+        position: fixed;
+        background-color: rgba(15, 15, 15, 0.95);
+        backdrop-filter: blur(3px);
+        top: 10vh;
+        right: 0;
+        width: 95vw;
+        height: 90vh;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .cart.active{
+        transform: translateX(0);
+    }
+
+}

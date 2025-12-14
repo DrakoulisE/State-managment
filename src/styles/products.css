@@ -1,0 +1,49 @@
+.product{
+    height: 10vh;
+    background-color: rgba(8, 8, 8, 0.774);
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 5px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addToCartButton{
+    background-color: rgb(7, 218, 0);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgba(4, 134, 0, 0.521);
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    font-weight: bold;
+}
+
+.addToCartButton:hover{
+    background-color: rgb(5, 139, 0);
+    border: 2px solid rgba(8, 230, 0, 0.521);
+    color: white;
+}
+
+.quantityControls{
+    background-color: rgba(255, 255, 255, 0.911);
+    color: black;
+    font-weight: bold;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.quantityControls button{
+    background-color: rgba(43, 43, 43, 0.589);
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    color: white;
+    font-weight: bold;
+}
